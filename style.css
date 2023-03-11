@@ -110,7 +110,49 @@ main{
     box-top
 ----------------------------------- */
 
+.box-top{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
+  border-radius: 10px;
+  text-align:center;
+}
 
+.box-top-title{
+  font-size:24px;
+}
+
+.box-top-table{
+  background-color: blue;
+  color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .box-top-table tr ::before{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+
+} */
+
+/* table{
+  position:relative;
+} */
+
+.box-top-table table , td {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+}
+.box-top-table td {
+	padding: 3px;
+	/* width: 30px; */
+	/* height: 25px; */
+}
 
 
 
