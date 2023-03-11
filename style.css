@@ -97,6 +97,7 @@ main{
 {
   width: 30%;
   text-align: center;
+  height:auto;
 }
 
 .menu-list li + li{
