@@ -80,8 +80,28 @@ main{
     menu
 ----------------------------------- */
 
+.menu{
+  width: 100%;
+  justify-content: center;
+}
 
+.menu-list{
+  width: 70%;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-content: center; */
+}
 
+.menu-list li
+{
+  width: 30%;
+  text-align: center;
+}
+
+.menu-list li + li{
+  border-left: 1px solid #333;
+}
 
 
 
