@@ -186,8 +186,21 @@ main{
     box-bottom
 ----------------------------------- */
 
+.notes{
+  font-size: 20px;
+  color: white;
+  background-color: blue;
+  padding: 5px;
+}
 
-
+.notes-description{
+  font-size:16px;
+  padding-top:1em;
+  padding-bottom:1em;
+  background-color: white;
+  color:red;
+  border-radius: 10px;
+}
 
 
 
