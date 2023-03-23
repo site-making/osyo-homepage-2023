@@ -78,12 +78,25 @@
 
 <body>
   <main>
-    <img src="img/background_left.png" alt="" class="background-left">
-    <img src="img/background_right.png" alt="" class="background-right">
-    <div id="wrapper">
+    <!-- <img src="img/background_left.png" alt="" class="background-left">
+    <img src="img/background_right.png" alt="" class="background-right"> -->
+    
       <div class="first-view">
         <img src="img/top_img.png" alt="TOP画像です">
+
+        <div class="circles"> <!--TODO アニメーション-->
+          <img src="img/05.png" alt="" class="circle">
+          <img src="img/05.png" alt="" class="circle">
+          <img src="img/05.png" alt="" class="circle">
+          <img src="img/05.png" alt="" class="circle">
+          <img src="img/05.png" alt="" class="circle">
+        </div>
+  
       </div>
+      
+
+      <div id="wrapper">
+
       <div class="menu">
         <ul class="menu-list">
           <li>
@@ -112,39 +125,38 @@
           </li>
         </ul>
       </div>
+
       <div class="box">
         <div id="introduce"></div>
-        <div class="box-title">
-          おしょバドってどんなサークル？
+        <h2 class="box-title">おしょバドってどんなサークル？</h2>
+        <div class="introduce-description">
+          マルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチですマルチです
         </div>
-        <div class="box-top-text">
-          マルチです
-        </div>
-        <div class="box-top-admin">
+        <div class="introduce-admin">
           サークル運営者：おしょさん
         </div>
-        <div class="box-top-table">
+        <div class="introduce-table">
           <table>
             <tbody>
               <tr>
-                <td>場所</td>
-                <td>東京都新宿区、中央区、世田谷区、江戸川区、荒川区、北区、江東区</td>
+                <td class="column">場所</td>
+                <td class="value">東京都新宿区、中央区、世田谷区、江戸川区、荒川区、北区、江東区</td>
               </tr>
               <tr>
-                <td>時間</td>
-                <td>朝～夜まで（日によって異なります）</td>
+                <td class="column">時間</td>
+                <td class="value">朝～夜まで（日によって異なります）</td>
               </tr>
               <tr>
-                <td>男女比</td>
-                <td>男性7:女性3くらい</td>
+                <td class="column">男女比</td>
+                <td class="value">男性7:女性3くらい</td>
               </tr>
               <tr>
-                <td>平均年齢</td>
-                <td>30歳くらい</td>
+                <td class="column">平均年齢</td>
+                <td class="value">30歳くらい</td>
               </tr>
               <tr>
-                <td>参加費</td>
-                <td>1,000円</td>
+                <td class="column">参加費</td>
+                <td class="value">1,000円</td>
               </tr>
             </tbody>
           </table>
@@ -157,11 +169,11 @@
 
       <div class="box">
         <div id="schedule"></div>
-        <div class="box-title">
+        <h2 class="box-title">
           開催スケジュール
-        </div>
+        </h2>
         <div class="calender">
-          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnz1uh3o7RiN7D9vSXpMNGUAO3xfqeIVlhPq2vyL7c-UUUJ0lN7CnQ6LrNuOtSdkC_DpzMw2K0JrPq/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="370px" height="750px" scrolling="no" frameborder="0"></iframe>
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnz1uh3o7RiN7D9vSXpMNGUAO3xfqeIVlhPq2vyL7c-UUUJ0lN7CnQ6LrNuOtSdkC_DpzMw2K0JrPq/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" frameborder="0"></iframe>
         </div>
       </div>
 
@@ -174,9 +186,9 @@
 
       <div class="box">
         <div id="attendance"></div>
-        <div class="box-title">
+        <h2 class="box-title">
           参加お申込み
-        </div>
+        </h2>
         <div class="notes">
           ※ 注意事項 ※
           <div class="notes-description">
@@ -202,9 +214,9 @@
         </div>
 
         <div class="contact">
-          <div class="contact-title">
+          <h3 class="contact-title">
             下記LINEへご連絡ください！
-          </div>
+          </h3>
           <div class="contact-description">
             上記サークル概要をご確認頂いた上で参加申し込みをお願いします。
           </div>
