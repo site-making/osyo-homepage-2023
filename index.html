@@ -78,6 +78,8 @@
 
 <body>
   <main>
+    <img src="img/background_left.png" alt="" class="background-left">
+    <img src="img/background_right.png" alt="" class="background-right">
     <div id="wrapper">
       <div class="first-view">
         <img src="img/top_img.png" alt="TOP画像です">
@@ -93,7 +95,7 @@
             </div>
           </li>
           <li>
-            <a class="menu-list-text">
+            <a class="menu-list-text" href="#schedule">
               開催スケジュール
             </a>
             <div class="menu-list-img">
@@ -101,7 +103,7 @@
             </div>
           </li>
           <li>
-            <a class="menu-list-text">
+            <a class="menu-list-text" href="#attendance">
               参加お申込み
             </a>
             <div class="menu-list-img">
@@ -110,7 +112,8 @@
           </li>
         </ul>
       </div>
-      <div class="box" id="indroduce">
+      <div class="box">
+        <div id="introduce"></div>
         <div class="box-title">
           おしょバドってどんなサークル？
         </div>
@@ -153,11 +156,12 @@
 
 
       <div class="box">
+        <div id="schedule"></div>
         <div class="box-title">
           開催スケジュール
         </div>
         <div class="calender">
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=bWF0c3Vtb3RvdHNtdGlAZ21haWwuY29t&src=NTQ5YjA3ZGQ0NTllNjI4ZjQ4ZDhhNzkzMGQ1NmIwZDYzNWI3YWMwZWRhYmYyZGM3MmQ2OTg1MjQxZjE3NTc2OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23EF6C00&color=%2333B679&color=%230B8043" style="border:solid 1px #777" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnz1uh3o7RiN7D9vSXpMNGUAO3xfqeIVlhPq2vyL7c-UUUJ0lN7CnQ6LrNuOtSdkC_DpzMw2K0JrPq/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="370px" height="750px" scrolling="no" frameborder="0"></iframe>
         </div>
       </div>
 
@@ -169,6 +173,7 @@
 
 
       <div class="box">
+        <div id="attendance"></div>
         <div class="box-title">
           参加お申込み
         </div>
@@ -195,10 +200,26 @@
             
           </div>
         </div>
+
+        <div class="contact">
+          <div class="contact-title">
+            下記LINEへご連絡ください！
+          </div>
+          <div class="contact-description">
+            上記サークル概要をご確認頂いた上で参加申し込みをお願いします。
+          </div>
+          <div class="contact-image">
+            <img src="img/qr_dummy.png" alt="">
+          </div>
+        </div>
       </div>
 
 
       <!-- box-bottom -->
+
+      <footer>
+        <img src="img/footer_img.png" alt="">
+      </footer>
     </div>
   </main>
 </body>
