@@ -8,6 +8,17 @@ main_color:
 
 #インデントと改行に注意
 #提出後からの修正のCSS追加する時は記述の最後に追加
+
+
+▼カラー
+紺：#131b7d
+注意事項の文字：#da1b1b
+
+▼フォントサイズ
+PC：14px
+スマホ：12px
+
+
 ----------------------------------- */
 
 /* ----------------------------------
@@ -35,7 +46,7 @@ main_color:
       /* 左のものから優先 */
       font-family: "メイリオ", YuGothic;
       line-height: 1.3;
-      font-size: 16px;
+      font-size: 14px;
     }
     ol, ul {
       list-style: none;
@@ -59,11 +70,31 @@ main_color:
 ----------------------------------- */
 
 main{
+    position:relative;
     width: 100%;
     margin: 0 auto;
     padding: 0;
     background-color: #fff;
 }
+
+.background-left{
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 18%;
+  height: auto;
+}
+
+.background-right{
+  z-index: 1;
+  position: absolute;
+  top:20%;
+  right:0%;
+  width: 18%;
+  height: auto;
+}
+
 
 /* ----------------------------------
     first-view
@@ -113,6 +144,7 @@ main{
     box
 ----------------------------------- */
 .box{
+  z-index: 2;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -121,10 +153,15 @@ main{
   text-align:center;
   margin-top: 40px;
   margin-bottom: 40px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 .box-title{
+  color:#131b7d;
   font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 /* ----------------------------------
@@ -132,7 +169,7 @@ main{
 ----------------------------------- */
 
 .box-top-table{
-  background-color: blue;
+  background-color: #131b7d;
   color: white;
   width: 70%;
   margin-left: auto;
@@ -194,7 +231,7 @@ main{
 .notes{
   font-size: 20px;
   color: white;
-  background-color: blue;
+  background-color: #131b7d;
   padding: 5px;
 }
 
@@ -203,8 +240,17 @@ main{
   padding-top:1em;
   padding-bottom:1em;
   background-color: white;
-  color:red;
+  color:#da1b1b;
   border-radius: 10px;
+}
+
+.contact{
+
+}
+
+.contact-title{
+  color: #131b7d;
+  font-size: 16px;
 }
 
 
