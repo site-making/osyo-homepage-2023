@@ -93,6 +93,11 @@ main{
   /* justify-content: center; */
 }
 
+.menu-list a{
+  text-decoration: none;
+  color:
+}
+
 .menu-list li
 {
   width: 30%;
