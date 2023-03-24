@@ -117,6 +117,13 @@ main{
 }
 
 
+.first-view img{
+  width:100%;
+}
+
+
+
+
 .circles{
   display: flex;
   position: absolute;
@@ -344,7 +351,11 @@ main{
     footer
 ----------------------------------- */
 
-
+footer img{
+  width:100%;
+  position: absolute;
+  bottom:-800px;
+}
 
 
 
