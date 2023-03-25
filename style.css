@@ -114,6 +114,7 @@ main{
 .first-view{
   width:100%;
   position: relative;
+  z-index: 1;
 }
 
 
@@ -124,14 +125,51 @@ main{
 
 
 
-.circles{
-  display: flex;
+
+.waves {
   position: absolute;
   bottom: 0%;
+  display: flex;
+ }
+
+
+.waves-each {
+  display:flex;
+  width:30%;
+  margin: 0;
+  padding: 0;
 }
-.circle{
-  width: 20%;
+  
+  
+  
+.endless-wave {
+  display:block;
+  width:10%;
+  height:auto;
+  flex-shrink:0;
 }
+  
+  
+#wave{
+  animation: wave 4s 2s linear infinite;
+}
+  
+  
+@keyframes wave {
+  from {
+    transform:translate(0%);
+  }
+  
+  to {
+    transform:translate(-200%);
+  }
+  
+}
+
+
+
+
+
 
 
 
@@ -355,7 +393,7 @@ main{
 footer img{
   width:100%;
   position: absolute;
-  bottom:-800px;
+  /* bottom:-260px; */
 }
 
 
