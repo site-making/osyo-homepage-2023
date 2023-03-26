@@ -88,24 +88,11 @@ main{
   background-size: contain;
 } 
 
-/* .background-left{
-  z-index: 1;
-  position: absolute;
-  top: 30%;
-  left: 0%;
-  width: 18%;
-  height: auto;
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  #wrapper{
+    background-size: 19%;
+  }
 }
-
-.background-right{
-  z-index: 1;
-  position: absolute;
-  top:30%;
-  right:0%;
-  width: 18%;
-  height: auto;
-} */
-
 
 /* ----------------------------------
     first-view
@@ -393,9 +380,16 @@ main{
 footer img{
   width:100%;
   position: absolute;
-  /* bottom:-260px; */
+  bottom:-170px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 968px){
+  footer img{
+    bottom:-100px;
+  }
+}
+ 
+  
 
 
 
