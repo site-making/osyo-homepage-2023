@@ -445,8 +445,21 @@ main{
 footer img{
   width:100%;
   position: absolute;
-  bottom:-170px;
+  bottom:-350px;
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  footer img{
+    bottom:-220px;
+  }
+}
+
+@media screen and (min-width: 968px) and (max-width: 1000px){
+  footer img{
+    bottom:-180px;
+  }
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 968px){
   footer img{
