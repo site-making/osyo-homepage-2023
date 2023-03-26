@@ -113,6 +113,71 @@ main{
 
 
 
+
+
+
+
+
+.shuttle1{
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 10%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+.shuttle2{
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  width: 6%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+.shuttle3{
+  position: absolute;
+  top: 75%;
+  left: 45%;
+  width: 5%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+
+.animation-yurayura{
+  transform-origin: center bottom;
+  animation: yurayura 2s linear infinite;
+}
+
+
+
+
+@keyframes  yurayura{
+  0% , 100%{
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(-10deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .waves {
   position: absolute;
   bottom: 0%;
