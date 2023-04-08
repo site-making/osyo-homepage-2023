@@ -77,6 +77,30 @@ main{
     background-color: #fff;
 }
 
+/* pc */
+@media screen and (min-width: 1021px){
+  .responsive-tablet-br{
+    display:none;
+  }
+  .responsive-smartphone-br{
+    display:none;
+  }
+  .box{
+    width: 70%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
+    border-radius: 10px;
+    text-align:center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #fff;
+  }
+}
+
 /* pc or tablet */
 @media screen and (min-width: 768px){
   #wrapper{
@@ -90,15 +114,50 @@ main{
   .smartphone-image{
     display:none;
   }
-}
-/* smartphone */
-@media screen and (max-width: 767px){
+  .responsive-smartphone-br{
+    display:none;
+  }
 }
 
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1000px){
+@media screen and (min-width: 768px) and (max-width: 1020px){
   #wrapper{
     background-size: 19%;
+  }
+  .responsive-smartphone-br{
+    display:none;
+  }
+  .box{
+    width: 85%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
+    border-radius: 10px;
+    text-align:center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #fff;
+  }
+}
+
+/* smartphone */
+@media screen and (max-width: 767px){
+  .box{
+    width: 95%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
+    border-radius: 10px;
+    text-align:center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #fff;
   }
 }
 
@@ -328,7 +387,7 @@ opacity: 0.5;
 /* ----------------------------------
     box
 ----------------------------------- */
-.box{
+/* .box{
   width: 70%;
   height: 30%;
   margin-left: auto;
@@ -341,7 +400,7 @@ opacity: 0.5;
   padding-top:20px;
   padding-bottom:20px;
   background-color: #fff;
-}
+} */
 
 .box-title{
   color:#131b7d;
@@ -360,12 +419,6 @@ opacity: 0.5;
   padding-right: 10%;
 }
 
-
-
-@media screen and (min-width: 1020px){
-  .hogegge{
-    display:none;
-  }}
 
 .introduce-admin{
   padding-top:0.5em;
@@ -556,7 +609,6 @@ tr.table-bottom{
   border-radius: 0.5em;
   font-size: 22px;
   color:white;
-  width:35%;
   letter-spacing:0.1em;
   font-weight: bold;
 }
