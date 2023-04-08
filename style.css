@@ -647,7 +647,7 @@ tr.table-bottom{
 
 
 .modal {
-  width: 65%;
+  width: 40%;
   height: 80%;
   border: 1px solid #000;
   position: fixed;
@@ -658,6 +658,42 @@ tr.table-bottom{
   display: none;
 }
 
+.modal-content{
+  padding:5%;
+}
+
+
+.modal-block{
+
+}
+
+.modal-block-title{
+  letter-spacing: 0.2em;
+  font-size:30px;
+  color:#131b7d;
+  font-weight: bold;
+}
+
+.modal-block-description{
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
+}
+
+.modal-block-description > .note{
+  color:red;
+}
+
+.openchat-register-button{
+  font-size:px;
+  font-weight:bold;
+  background:#131b7d;
+  color:white;
+  border-radius: 0.5em;
+  letter-spacing: 0.1em;
+  padding-left: 3%;
+  padding-right: 3%;
+  height:20%;
+}
 
 .modal-close__wrap {
   position: absolute;
@@ -707,10 +743,6 @@ tr.table-bottom{
 
 .modal.open {
   display: block;
-}
-
-.modal-content{
-  padding:10%;
 }
 
 .modal-content__description h2{
