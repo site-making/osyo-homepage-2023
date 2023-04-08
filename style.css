@@ -47,7 +47,7 @@ PC：14px
       font-family: "メイリオ";
       line-height: 1.3;
       font-size: 14px;
-    }
+    };
     ol, ul {
       list-style: none;
     }
@@ -88,24 +88,11 @@ main{
   background-size: contain;
 } 
 
-/* .background-left{
-  z-index: 1;
-  position: absolute;
-  top: 30%;
-  left: 0%;
-  width: 18%;
-  height: auto;
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  #wrapper{
+    background-size: 19%;
+  }
 }
-
-.background-right{
-  z-index: 1;
-  position: absolute;
-  top:30%;
-  right:0%;
-  width: 18%;
-  height: auto;
-} */
-
 
 /* ----------------------------------
     first-view
@@ -114,6 +101,7 @@ main{
 .first-view{
   width:100%;
   position: relative;
+  z-index: 1;
 }
 
 
@@ -124,14 +112,116 @@ main{
 
 
 
-.circles{
-  display: flex;
+
+
+
+
+
+
+.shuttle1{
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 10%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+.shuttle2{
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  width: 6%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+.shuttle3{
+  position: absolute;
+  top: 75%;
+  left: 45%;
+  width: 5%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+
+.animation-yurayura{
+  transform-origin: center bottom;
+  animation: yurayura 2s linear infinite;
+}
+
+
+
+
+@keyframes  yurayura{
+  0% , 100%{
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(-10deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.waves {
   position: absolute;
   bottom: 0%;
+  display: flex;
+ }
+
+
+.waves-each {
+  display:flex;
+  width:30%;
+  margin: 0;
+  padding: 0;
 }
-.circle{
-  width: 20%;
+  
+  
+  
+.endless-wave {
+  display:block;
+  width:10%;
+  height:auto;
+  flex-shrink:0;
 }
+  
+  
+#wave{
+  animation: wave 4s 2s linear infinite;
+}
+  
+  
+@keyframes wave {
+  from {
+    transform:translate(0%);
+  }
+  
+  to {
+    transform:translate(-200%);
+  }
+  
+}
+
+
+
+
+
 
 
 
@@ -158,12 +248,13 @@ main{
   color: #131b7d;
 }
 
-.menu-list li
-{
+.menu-list li{
   width: 30%;
   text-align: center;
   height:auto;
 }
+
+
 
 .menu-list a:hover{
   color:red;
@@ -187,6 +278,43 @@ main{
   width: 50%;
   height: auto;
 }
+
+
+
+
+
+
+
+.menu-list-img :hover {
+opacity: 0.5;
+}
+
+.menu-list-img:hover{
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.8s;
+    /* width: 128px; */
+    animation-name: anim_v;
+  }
+  
+
+    
+@keyframes anim_v {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+
+::marker{
+  display: none;
+}
+
+
 
 /* ----------------------------------
     box
@@ -236,6 +364,7 @@ main{
   border-radius: 0.5em;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .introduce-table table{
@@ -244,9 +373,68 @@ main{
   width:90%;
 }
 
-.column{
-  letter-spacing: 0.3em;
+.introduce-table table td::before{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: 15.6%;
+  background-color: red;
 }
+
+td.column::before{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: 15.6%;
+  top: 30.5%;
+  background-color: red;
+}
+
+td.column::after{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: 15.6%;
+  top: 38.5%;
+  background-color: red;
+}
+
+
+
+
+td.value::before{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: 15.6%;
+  top: 60%;
+  background-color: red;
+}
+
+td.value::after{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: 15.6%;
+  top: 80%;
+  background-color: red;
+}
+
+
+
+
+
+
+td .column{
+  letter-spacing: 0.3em;
+  border-left: #131b7d;
+}
+
 
 .value{
   text-align: left;
@@ -255,23 +443,23 @@ main{
   padding-bottom:1em;
 }
 
-/* .box-top-table tr ::before{
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: red;
 
-} */
+td.column{
+  border-right: 1px solid #fff;
+}
 
-/* table{
-  position:relative;
-} */
 
-.introduce-table table , td {
-	border: 1px solid #595959;
+.introduce-table tr{
+	border-bottom: 1px solid #fff;
 	border-collapse: collapse;
 }
+
+tr.table-bottom{
+  border-bottom:0px;
+}
+
+
+
 
 
 
@@ -355,9 +543,29 @@ main{
 footer img{
   width:100%;
   position: absolute;
-  bottom:-800px;
+  bottom:-350px;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  footer img{
+    bottom:-220px;
+  }
+}
+
+@media screen and (min-width: 968px) and (max-width: 1000px){
+  footer img{
+    bottom:-180px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 968px){
+  footer img{
+    bottom:-100px;
+  }
+}
+ 
+  
 
 
 
