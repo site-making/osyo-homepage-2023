@@ -82,7 +82,7 @@ main{
 #wrapper{
   width:100%;
   height:90%;
-  background-image: url(img/background_left.png),url(img/background_right.png);
+  background-image: url(img/pc/left_dummy.png),url(img/pc/right_dummy.png);
   background-position:left center, right center; 
   background-repeat: no-repeat,no-repeat;
   background-size: contain;
@@ -373,58 +373,60 @@ opacity: 0.5;
   width:90%;
 }
 
-.introduce-table table td::before{
+
+td.place::before{
   position: absolute;
   content: "";
   width: 10px;
   height: 10px;
-  left: 15.6%;
-  background-color: red;
+  left: 22.3%;
+  top: 15%;
+  background-color: #131b7d;
 }
 
-td.column::before{
+td.time::after{
   position: absolute;
   content: "";
   width: 10px;
   height: 10px;
-  left: 15.6%;
-  top: 30.5%;
-  background-color: red;
-}
-
-td.column::after{
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  left: 15.6%;
-  top: 38.5%;
-  background-color: red;
+  left: 22.3%;
+  top: 29%;
+  background-color: #131b7d;
 }
 
 
 
 
-td.value::before{
+td.gender::before{
   position: absolute;
   content: "";
   width: 10px;
   height: 10px;
-  left: 15.6%;
-  top: 60%;
-  background-color: red;
+  left: 22.3%;
+  top: 43%;
+  background-color: #131b7d;
 }
 
-td.value::after{
+td.age::after{
   position: absolute;
   content: "";
   width: 10px;
   height: 10px;
-  left: 15.6%;
-  top: 80%;
-  background-color: red;
+  left: 22.3%;
+  top: 57%;
+  background-color: #131b7d;
 }
 
+
+td.bad::after{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: 22.3%;
+  top: 83%;
+  background-color: #131b7d;
+}
 
 
 
