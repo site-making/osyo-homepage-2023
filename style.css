@@ -85,8 +85,8 @@ main{
   background-image: url(img/background_left.png),url(img/background_right.png);
   background-position:left center, right center; 
   background-repeat: no-repeat,no-repeat;
-  background-size: 15%,15%;
-}
+  background-size: contain;
+} 
 
 /* .background-left{
   z-index: 1;
@@ -115,6 +115,13 @@ main{
   width:100%;
   position: relative;
 }
+
+
+.first-view img{
+  width:100%;
+}
+
+
 
 
 .circles{
@@ -196,6 +203,7 @@ main{
   margin-bottom: 40px;
   padding-top:20px;
   padding-bottom:20px;
+  background-color: #fff;
 }
 
 .box-title{
@@ -344,7 +352,11 @@ main{
     footer
 ----------------------------------- */
 
-
+footer img{
+  width:100%;
+  position: absolute;
+  bottom:-800px;
+}
 
 
 
