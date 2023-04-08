@@ -613,7 +613,7 @@ tr.table-bottom{
   font-weight: bold;
 }
 
-.register-button a:hover{
+.register-button:hover{
   border-radius:0.5em;
   border-width: 1px;
   background:white;
@@ -647,9 +647,24 @@ footer img{
 
 @media screen and (min-width: 768px) and (max-width: 968px){
   footer img{
-    bottom:-100px;
+    bottom:-50px;
   }
 }
+
+@media screen and (min-width: 500px) and (max-width: 768px){
+  footer img{
+    bottom:-50px;
+  }
+  
+}
+
+@media screen and (max-width: 500px){
+  footer img{
+    bottom:-50px;
+  }
+  
+}
+
  
   
 
