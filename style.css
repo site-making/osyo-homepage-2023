@@ -252,6 +252,7 @@ main{
   width: 30%;
   text-align: center;
   height:auto;
+  list-style:none
 }
 
 
@@ -351,6 +352,13 @@ opacity: 0.5;
   padding-right: 10%;
 }
 
+
+
+@media screen and (min-width: 1020px){
+  .hogegge{
+    display:none;
+  }}
+
 .introduce-admin{
   padding-top:0.5em;
   padding-bottom:0.5em;
@@ -394,9 +402,6 @@ td.time::after{
   background-color: #131b7d;
 }
 
-
-
-
 td.gender::before{
   position: absolute;
   content: "";
@@ -417,7 +422,6 @@ td.age::after{
   background-color: #131b7d;
 }
 
-
 td.bad::after{
   position: absolute;
   content: "";
@@ -427,9 +431,6 @@ td.bad::after{
   top: 83%;
   background-color: #131b7d;
 }
-
-
-
 
 
 td .column{
@@ -505,37 +506,60 @@ tr.table-bottom{
 }
 
 .notes-description{
-  font-size:16px;
   padding-top:1em;
   padding-bottom:1em;
   background-color: white;
-  color:#da1b1b;
   border-radius: 0.5em;
 }
 
-.contact{
-  padding-top:2em;
+.notes-description-text{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:14px;
+  font-weight: bold;
+  color:#da1b1b;
 }
 
-.contact-title{
-  letter-spacing: 0.2em;
-  color: #131b7d;
-  font-size: 16px;
+.notes-description p {
+  text-align:left;
+}
+
+.register{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.register-description{
+  margin-top:5%;
+  margin-bottom:3%;
+  font-size: 18px;
+  font-weight: bold;
+  color:#131b7d;
+}
+
+.register-button{
+  padding-left:30px;
+  padding-right:30px;
+  padding-top:5px;
+  padding-bottom:5px;
+  background: #FF3BE7;
+  border: 3px solid #FF3BE7;
+  border-radius: 0.5em;
+  font-size: 22px;
+  color:white;
+  width:35%;
+  letter-spacing:0.1em;
   font-weight: bold;
 }
 
-.contact-description{
-  padding-top:1em;
-  padding-bottom:1em;
+.register-button:hover{
+  border-radius:0.5em;
+  border-width: 1px;
+  background:white;
+  border: 3px solid #FF3BE7;
+  color:#FF3BE7
 }
-
-.contact-image{
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  height:auto;
-}
-
 
 
 /* ----------------------------------
