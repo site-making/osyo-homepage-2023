@@ -11,5 +11,9 @@ open.on('click', function () { //ボタンをクリックしたら
 });
 close.on('click', function () { //×ボタンをクリックしたら
   modal.removeClass("open"); // overlayクラスからopenクラスを外す
+  body.css('overflow-y','auto');
   overlay.removeClass("open"); // overlayクラスからopenクラスを外す
 });
+
+
+
