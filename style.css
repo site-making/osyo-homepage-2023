@@ -25,6 +25,9 @@ PC：14px
     reset-css
 ----------------------------------- */
 
+
+
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -647,8 +650,8 @@ tr.table-bottom{
 
 
 .modal {
-  width: 65%;
-  height: 80%;
+  width: 50%;
+  height: 90%;
   border: 1px solid #000;
   position: fixed;
   top: 50%;
@@ -656,8 +659,77 @@ tr.table-bottom{
   transform: translate(-50%, -50%);
   background: #fff;
   display: none;
+  overflow-y:auto;
+  border-radius: 2em;
+  border: none;
+  box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
+  flex-direction: column;
 }
 
+.modal::-webkit-scrollbar{
+  width: 10px;
+}
+.modal::-webkit-scrollbar-track{
+  background-color: white;
+}
+.modal::-webkit-scrollbar-thumb{
+  background-color: #17585d;
+}
+
+.modal-content{
+  padding:5%;
+}
+
+
+.modal-block{
+  height:50%;
+}
+
+.modal-block-title{
+  letter-spacing: 0.2em;
+  font-size:30px;
+  color:#131b7d;
+  font-weight: bold;
+}
+
+.modal-block-description{
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  margin-top:3%;
+  color:#262626;
+}
+
+.modal-block-description > .note{
+  color:red;
+}
+
+.modal-register-button{
+  font-size:16px;
+  font-weight:bold;
+  background:#131b7d;
+  color:white;
+  border-radius: 0.5em;
+  letter-spacing: 0.1em;
+  padding-top:1%;
+  padding-bottom:1%;
+  margin-top:3%;
+  margin-bottom:3%;
+  height:20%;
+  width:40%;
+}
+
+.modal-register-button:hover{
+  border-radius:0.5em;
+  border-width: 1px;
+  background:white;
+  border: 3px solid #131b7d;
+  color:#131b7d;
+}
+
+.modal-qr-image{
+  height:auto;
+  width:30%;
+}
 
 .modal-close__wrap {
   position: absolute;
@@ -674,6 +746,7 @@ tr.table-bottom{
   width: 28px;
   display: block;
   height: 28px;
+  position:sticky;
 }
 
 .modal-close span {
@@ -707,10 +780,6 @@ tr.table-bottom{
 
 .modal.open {
   display: block;
-}
-
-.modal-content{
-  padding:10%;
 }
 
 .modal-content__description h2{
