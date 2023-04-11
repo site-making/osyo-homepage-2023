@@ -305,15 +305,35 @@ main{
 
 .menu{
   width: 100%;
-  justify-content: center;
 }
 
 .menu-list{
-  width: 70%;
+  width: 75%;
   display:flex;
   margin-left: auto;
   margin-right: auto;
-  /* justify-content: center; */
+}
+
+@media screen and (min-width: 515px) and (max-width: 685px) {
+  .menu-list{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .menu-list{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .menu-br{
+    display:none;
+  }
+  .menu-list{
+    width: 100%;
+  }
+
 }
 
 .menu-list a{
@@ -322,11 +342,13 @@ main{
 }
 
 .menu-list li{
-  width: 30%;
+  width: 33%;
   text-align: center;
   height:auto;
   list-style:none
 }
+
+
 
 
 
@@ -336,21 +358,21 @@ main{
 
 
 .menu-list li + li{
-  border-left: 1px solid #131b7d;
+  border-left: 1.5px solid #bdc2f5;
   height: 50px;
 }
 
 .menu-list-text{
   font-weight: bold;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 .menu-list-img{
-  margin-top:10px;
+  margin-top:7px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: auto;
+  width: 22px;
+  height: 22px;
 }
 
 
@@ -735,7 +757,9 @@ tr.table-bottom{
   position: absolute;
   right: 40px;
   top: 20px;
+  display: flex;
 }
+
 
 .modal-close {
   background: transparent;
@@ -803,41 +827,12 @@ tr.table-bottom{
 footer img{
   width:100%;
   position: absolute;
-  bottom:-350px;
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1200px){
-  footer img{
-    bottom:-220px;
-  }
-}
-
-@media screen and (min-width: 968px) and (max-width: 1000px){
-  footer img{
-    bottom:-180px;
-  }
+  bottom:0px;
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 968px){
-  footer img{
-    bottom:-50px;
-  }
-}
 
-@media screen and (min-width: 500px) and (max-width: 768px){
-  footer img{
-    bottom:-50px;
-  }
-  
-}
 
-@media screen and (max-width: 500px){
-  footer img{
-    bottom:-50px;
-  }
-  
-}
 
  
   
