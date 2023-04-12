@@ -120,6 +120,7 @@ main{
   .smartphone-image{
     display:none;
   }
+
   .responsive-smartphone-br{
     display:none;
   }
@@ -226,6 +227,10 @@ main{
     background-color: #fff;
   }
 
+  .phone05{
+    margin-bottom: 200px;
+  }
+
   .register-button{
     padding-left:30px;
     padding-right:30px;
@@ -296,17 +301,40 @@ main{
     first-view
 ----------------------------------- */
 
-.first-view{
+.first-view-pc{
   width:100%;
   position: relative;
   z-index: 1;
 }
 
 
-.first-view img{
+.first-view-pc img{
   width:100%;
 }
 
+
+@media screen and (max-width: 767px){
+  .first-view-pc{
+    display:none;
+  }
+}
+ 
+@media screen and (min-width: 768px){
+  .first-view-phone{
+    display:none;
+  }
+}
+
+.first-view-phone{
+  width:100%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.first-view-phone img{
+  width:100%;
+}
 
 
 
@@ -343,13 +371,38 @@ main{
   animation: shuttle1 4s linear infinite;
 }
 
+.shuttle1-phone{
+  position: absolute;
+  top: 3%;
+  left: 70%;
+  width: 20%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+.shuttle2-phone{
+  position: absolute;
+  top: 44.9%;
+  left: 5%;
+  width: 15%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+.shuttle3-phone{
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  width: 10%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
 
 .animation-yurayura{
   transform-origin: center bottom;
   animation: yurayura 2s linear infinite;
 }
-
-
 
 
 @keyframes  yurayura{
@@ -362,23 +415,9 @@ main{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .waves {
   position: absolute;
-  bottom: 0%;
+  bottom: 3px;
   display: flex;
  }
 
@@ -417,13 +456,6 @@ main{
 }
 
 
-
-
-
-
-
-
-
 /* ----------------------------------
     menu
 ----------------------------------- */
@@ -433,10 +465,11 @@ main{
 }
 
 .menu-list{
-  width: 75%;
+  width: 70%;
   display:flex;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 @media screen and (min-width: 515px) and (max-width: 685px) {
@@ -445,20 +478,19 @@ main{
   }
 }
 
-@media screen and (max-width: 515px) {
-  .menu-list{
-    width: 100%;
-  }
-}
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 450px) and (max-width: 515px){
   .menu-br{
     display:none;
   }
   .menu-list{
     width: 100%;
   }
-
+}
+@media screen and (max-width: 450px) {
+  .menu-list{
+    width: 100%;
+  }
 }
 
 .menu-list a{
@@ -467,14 +499,11 @@ main{
 }
 
 .menu-list li{
-  width: 33%;
+  width: 33.3%;
   text-align: center;
   height:auto;
   list-style:none
 }
-
-
-
 
 
 .menu-list a:hover{
@@ -499,10 +528,6 @@ main{
   width: 22px;
   height: 22px;
 }
-
-
-
-
 
 
 
@@ -710,6 +735,10 @@ tr.table-bottom{
     box-bottom
 ----------------------------------- */
 
+.box-bootom{
+  margin-bottom: 70px;
+}
+
 .notes{
   width: 80%;
   margin-left: auto;
@@ -754,20 +783,6 @@ tr.table-bottom{
   color:#131b7d;
 }
 
-/* .register-button{
-  padding-left:30px;
-  padding-right:30px;
-  padding-top:5px;
-  padding-bottom:5px;
-  background: #FF3BE7;
-  border: 3px solid #FF3BE7;
-  border-radius: 0.5em;
-  font-size: 22px;
-  color:white;
-  letter-spacing:0.1em;
-  font-weight: bold;
-} */
-
 .register-button:hover{
   border-radius:0.5em;
   border-width: 1px;
@@ -808,12 +823,28 @@ tr.table-bottom{
 
 .modal-content{
   padding:5%;
+  position:relative;
+  z-index: 20;
 }
 
 
 .modal-block{
   height:50%;
 }
+
+@media screen and (min-width:1030px){
+  .modal-title-br{
+    display: none;
+  }
+}
+ 
+@media screen and (max-width:768px){
+  .modal-title-br{
+    display: none;
+  }
+}
+
+  
 
 
 .modal-block-description{
@@ -910,15 +941,72 @@ tr.table-bottom{
 }
 
 
+
+
+
+
+
+
+
+
+
 /* ----------------------------------
     footer
 ----------------------------------- */
 
-footer img{
+.pc-footer{
+  width:100%;
+  position: absolute;
+  bottom: -10px;
+  position:relative;
+  z-index: 0;
+}
+
+/* .footer-description{
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  color: #fff;
+} */
+
+.footer-description p{
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 1;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .pc-footer{
+    display:none;
+  }
+  .footer-description{
+    display:none;
+  }
+}
+
+.smartphone-footer{
   width:100%;
   position: absolute;
   bottom:0px;
 }
+
+@media screen and (min-width: 769px) {
+  .smartphone-footer{
+    display:none;
+    position:relative;
+    z-index: 0;
+  } 
+}
+  
+
+
 
 
 

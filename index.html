@@ -71,7 +71,8 @@
 
 <body>
   <main>    
-      <div class="first-view">
+    <!-- pc&tablet　first-view -->
+      <div class="first-view-pc">
         <img src="img/top_img.png" alt="TOP画像です">
         <div class="shuttle1 animation-yurayura"><img src="./img/01.png"></div>
         <div class="shuttle2 animation-yurayura"><img src="./img/02.png"></div>
@@ -103,6 +104,58 @@
           </div>
         </div>
       </div>
+      
+  <!-- smartphone　first-view -->
+      <div class="first-view-phone">
+        <img src="img/smartphone-img/01.jpg" alt="TOP画像です">
+        <div class="shuttle1-phone animation-yurayura"><img src="./img/01.png"></div>
+        <div class="shuttle2-phone animation-yurayura"><img src="./img/02.png"></div>
+        <div class="shuttle3-phone animation-yurayura"><img src="./img/03.png"></div>
+
+        <div class="waves">
+          <div class = "waves-each">
+            <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+            <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+            <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+            <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+
+          </div>
+          <div class = "waves-each">
+            <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+            <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+            <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+            <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+
+          </div>        
+          <div class = "waves-each">
+              <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+              <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+              <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+              <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+
+          </div>
+          <div class = "waves-each">
+              <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+              <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+              <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+              <img id ="wave" class = "endless-wave" src="./img/smartphone-img/02.png">
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
       <div id="wrapper">
       <div class="menu">
         <ul class="menu-list">
@@ -208,7 +261,7 @@
 <!-- box-bottom -->
 
 
-      <div class="box">
+      <div class="box box-bootom">
         <div id="attendance"></div>
         <h2 class="box-title">
           参加お申込み
@@ -261,7 +314,7 @@
             <div class="modal-content">
 
               <div class="modal-block">
-                <h2 class="modal-block-title">①オープンチャットのご登録</h2>
+                <h2 class="modal-block-title">①オープンチャット<br class="modal-title-br">のご登録</h2>
               
                 <div class="modal-block-description">
                   下記リンク、またはQRコードから<br class="responsive-smartphone-br">オープンチャットの登録をし<br>ノートに記載のルールをご確認ください。
@@ -325,14 +378,21 @@
 
 
 
-      <div class="smartphone-image">
+      <div class="smartphone-image phone05">
         <img src="img/smartphone-img/05.png" alt="">
       </div>
 
       <!-- box-bottom -->
 
       <footer>
-        <img src="img/footer_img.png" alt="">
+        <img class="pc-footer" src="img/footer_img.png" alt="フッター画像">
+        <div class="footer-description">
+          <p>
+            Copyright © 2013 おしょバド
+          </p>
+          </div>
+        <img class="smartphone-footer" src="img/smartphone-img/06.png" alt="フッター画像">
+
       </footer>
     </div>
 
