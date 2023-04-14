@@ -94,8 +94,8 @@ main{
     height: 30%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-    border-radius: 10px;
+    box-shadow:0 0 5px #fff, 0 0 13px #898dbe;
+    border-radius: 25px;
     text-align:center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -297,6 +297,18 @@ main{
   }
 }
 
+
+/* ----------------------------------
+    追加修正(提出後)
+----------------------------------- */
+
+.box {
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+
+
 /* ----------------------------------
     first-view
 ----------------------------------- */
@@ -335,13 +347,6 @@ main{
 .first-view-phone img{
   width:100%;
 }
-
-
-
-
-
-
-
 
 
 .shuttle1{
@@ -440,7 +445,7 @@ main{
   
   
 #wave{
-  animation: wave 4s 2s linear infinite;
+  animation: wave 6s 2s linear infinite;
 }
   
   
@@ -454,6 +459,19 @@ main{
   }
   
 }
+
+
+/* ----------------------------------
+    追加修正(提出後)
+----------------------------------- */
+
+
+@media (max-width: 783px) {
+  #wave {
+      animation: wave 4s 2s linear infinite;
+  }
+}
+
 
 
 /* ----------------------------------
@@ -506,11 +524,6 @@ main{
 }
 
 
-.menu-list a:hover{
-  color:red;
-}
-
-
 .menu-list li + li{
   border-left: 1.5px solid #bdc2f5;
   height: 50px;
@@ -531,16 +544,13 @@ main{
 
 
 
-.menu-list-img :hover {
-opacity: 0.5;
-}
 
-.menu-list-img:hover{
+
+.menu-list a:hover .menu-list-img a:hover{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: 0.8s;
-    /* width: 128px; */
     animation-name: anim_v;
   }
   
@@ -561,24 +571,17 @@ opacity: 0.5;
 }
 
 
+/* アンカーリンクへのスムーススクロール */
+html {
+   scroll-behavior: smooth;
+}
+
+
+
 
 /* ----------------------------------
     box
 ----------------------------------- */
-/* .box{
-  width: 70%;
-  height: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-  border-radius: 10px;
-  text-align:center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color: #fff;
-} */
 
 .box-title{
   color:#131b7d;
@@ -593,7 +596,6 @@ opacity: 0.5;
 ----------------------------------- */
 
 .introduce-description{
-  font-weight: bold;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -704,7 +706,14 @@ tr.table-bottom{
 
 
 
+/* ----------------------------------
+    追加修正(提出後)
+----------------------------------- */
 
+.introduce-description {
+  line-height: 1.8rem;
+  padding-top: 1rem;
+}
 
 
 
@@ -810,16 +819,6 @@ tr.table-bottom{
 }
 
 
-/* .modal::-webkit-scrollbar{
-  width: 10px;
-  margin-left: -100px;
-}
-.modal::-webkit-scrollbar-track{
-  background-color: white;
-}
-.modal::-webkit-scrollbar-thumb{
-  background-color: #17585d;
-} */
 
 .modal-content{
   padding:5%;
@@ -940,9 +939,55 @@ tr.table-bottom{
   width: 90%;
 }
 
+/* ----------------------------------
+    追加修正(提出後)
+----------------------------------- */
 
+.pc-footer,.smartphone-footer {
+  z-index: 1;
+}
+.overlay {
+  z-index: 5;
+}
+.modal {
+  z-index: 10;
+}
 
+.modal_close_position {
+  z-index: 25;
+}
 
+.notes {
+  padding-top: 10px;
+}
+.notes-description {
+  margin-top: 10px;
+}
+
+.notes-description p {
+  line-height: 1.8rem;
+}
+
+.register-description {
+  line-height: 2rem;
+}
+
+#js-modal::-webkit-scrollbar{
+  display: none;
+}
+
+/* モーダル表示後のスクロールバー非表示 */
+/*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+#js-modal{
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+}
+
+.modal-register-button {
+    border: 3px solid #131b7d;
+    line-height: 1.5rem;
+}
 
 
 
@@ -1006,6 +1051,12 @@ tr.table-bottom{
 }
   
 
+/* ----------------------------------
+    追加修正(提出後)
+----------------------------------- */
+.pc-footer {
+  margin-top: -150px;
+}
 
 
 
@@ -1019,6 +1070,13 @@ tr.table-bottom{
 
 
 
-/* ----------------------------------
-    追加修正(提出後)
------------------------------------ */
+
+
+
+
+
+
+
+
+
+
