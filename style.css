@@ -299,7 +299,7 @@ main{
 
 
 /* ----------------------------------
-    追加修正(提出後)
+    main追加修正(提出後)
 ----------------------------------- */
 
 .box {
@@ -462,7 +462,7 @@ main{
 
 
 /* ----------------------------------
-    追加修正(提出後)
+    first-view追加修正(提出後)
 ----------------------------------- */
 
 
@@ -707,7 +707,7 @@ tr.table-bottom{
 
 
 /* ----------------------------------
-    追加修正(提出後)
+    box-top追加修正(提出後)
 ----------------------------------- */
 
 .introduce-description {
@@ -940,7 +940,7 @@ tr.table-bottom{
 }
 
 /* ----------------------------------
-    追加修正(提出後)
+    box-bottom追加修正(提出後)
 ----------------------------------- */
 
 .pc-footer,.smartphone-footer {
@@ -1007,13 +1007,6 @@ tr.table-bottom{
   z-index: 0;
 }
 
-/* .footer-description{
-  position: absolute;
-  bottom: 0px;
-  z-index: 1;
-  color: #fff;
-} */
-
 .footer-description p{
   position: absolute;
   bottom: -10px;
@@ -1024,7 +1017,6 @@ tr.table-bottom{
   z-index: 1;
   color: #fff;
 }
-
 
 
 @media screen and (max-width: 768px) {
@@ -1052,7 +1044,7 @@ tr.table-bottom{
   
 
 /* ----------------------------------
-    追加修正(提出後)
+    footer追加修正(提出後)
 ----------------------------------- */
 .pc-footer {
   margin-top: -150px;
