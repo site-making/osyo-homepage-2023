@@ -106,7 +106,7 @@ main{
 }
 
 /* pc or tablet */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1020px){
   #wrapper{
     margin-left:auto;
     margin-right:auto;
@@ -124,6 +124,9 @@ main{
   .responsive-smartphone-br{
     display:none;
   }
+}
+
+
 
   .register-button{
     padding-left:30px;
@@ -182,9 +185,9 @@ main{
     margin-top:3%;
     margin-bottom:3%;
     height:20%;
-    width:40%;
+    width:60%;
   }
-}
+
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1020px){
@@ -199,8 +202,8 @@ main{
     height: 30%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-    border-radius: 10px;
+    box-shadow:0 0 5px #fff, 0 0 13px #898dbe;
+    border-radius: 25px;
     text-align:center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -217,19 +220,17 @@ main{
     height: 30%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-    border-radius: 10px;
+    box-shadow:0 0 5px #fff, 0 0 13px #898dbe;
+    border-radius: 25px;
     text-align:center;
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top:20px;
     padding-bottom:20px;
     background-color: #fff;
+    padding: 20px !important;
   }
 
-  .phone05{
-    margin-bottom: 200px;
-  }
 
   .register-button{
     padding-left:30px;
@@ -293,7 +294,7 @@ main{
     margin-top:3%;
     margin-bottom:3%;
     height:20%;
-    width:80%;
+    width:85%;
   }
 }
 
@@ -305,6 +306,19 @@ main{
 .box {
   margin-top: 5rem;
   padding: 3rem;
+}
+
+.smartphone-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px){
+  .box{
+    margin-bottom: 0 !important;
+  }
+  .smartphone-image+.box {
+    margin-top: 0;
+  }
 }
 
 
@@ -387,17 +401,18 @@ main{
 
 .shuttle2-phone{
   position: absolute;
-  top: 44.9%;
+  top: 75%;
   left: 5%;
   width: 15%;
   height: auto;
   animation: shuttle1 4s linear infinite;
+
 }
 
 .shuttle3-phone{
   position: absolute;
-  top: 75%;
-  left: 15%;
+  top: 18%;
+  left: 10%;
   width: 10%;
   height: auto;
   animation: shuttle1 4s linear infinite;
@@ -546,11 +561,11 @@ main{
 
 
 
-.menu-list a:hover .menu-list-img a:hover{
+.menu-list a:hover .menu-list-img {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-duration: 0.8s;
+    animation-duration: 0.4s;
     animation-name: anim_v;
   }
   
@@ -715,8 +730,18 @@ tr.table-bottom{
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 767px){
+  .introduce-description {
+    padding: 1rem 0 0;
+  }
+}
 
-
+@media screen and (max-width: 767px){
+  .introduce-table {
+    margin: 3% 0;
+    width: 100%;
+  }
+}
 
 /* ----------------------------------
     box-middle
@@ -728,14 +753,26 @@ tr.table-bottom{
 
 .calender{
   width:80%;
-  height:300px;
+  height:500px;
   margin-left: auto;
   margin-right: auto;
 }
 .calender iframe{
   width: 100%;
-  height:300px;
+  height:500px;
 }
+
+
+/* ----------------------------------
+    box-middle追加修正(提出後)
+----------------------------------- */
+@media screen and (max-width: 767px){
+  .calender {
+    width: 100%;
+}
+
+
+
 
 
 
@@ -990,6 +1027,32 @@ tr.table-bottom{
 }
 
 
+@media (max-width: 1020px) {
+  .modal {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .notes {
+    width: 100%;
+  }
+  .notes-description-text {
+    width: 85%;
+  }
+}
+
+
+.modal-content hr {
+  margin: 30px auto;
+}
+
+
+
+
+
+
+
 
 
 
@@ -1030,11 +1093,9 @@ tr.table-bottom{
 
 .smartphone-footer{
   width:100%;
-  position: absolute;
-  bottom:0px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px){
   .smartphone-footer{
     display:none;
     position:relative;
