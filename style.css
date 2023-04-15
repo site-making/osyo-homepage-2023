@@ -558,9 +558,6 @@ main{
 }
 
 
-
-
-
 .menu-list a:hover .menu-list-img {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -769,6 +766,7 @@ tr.table-bottom{
 @media screen and (max-width: 767px){
   .calender {
     width: 100%;
+  }
 }
 
 
@@ -1097,9 +1095,9 @@ tr.table-bottom{
 
 @media screen and (min-width: 769px){
   .smartphone-footer{
-    display:none;
     position:relative;
     z-index: 0;
+    display:none;
   } 
 }
   
