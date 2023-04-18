@@ -412,8 +412,8 @@ main{
 .shuttle3-phone{
   position: absolute;
   top: 15%;
-  left: 1%;
-  width: 10%;
+  left: 10%;
+  width: 14%;
   height: auto;
   animation: shuttle1 4s linear infinite;
 }
