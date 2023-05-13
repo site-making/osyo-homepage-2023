@@ -47,7 +47,7 @@ PC：14px
       color: #000000;
       background-color: #fff;
       /* 左のものから優先 */
-      font-family: "メイリオ";
+      font-family: "メイリオ", "Meiryo", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
       line-height: 1.3;
       font-size: 14px;
     };
@@ -308,7 +308,7 @@ main{
 }
 
 .menu-list{
-  width: 75%;
+  width: 80%;
   display:flex;
   margin-left: auto;
   margin-right: auto;
@@ -326,15 +326,21 @@ main{
   }
 }
 
+@media screen and (max-width: 450px) {
+  .menu-list{
+    width: 100%;
+  }
+}
+
+
 @media screen and (min-width: 450px) {
   .menu-br{
     display:none;
   }
-  .menu-list{
-    width: 100%;
-  }
-
 }
+
+
+
 
 .menu-list a{
   text-decoration: none;
