@@ -503,11 +503,7 @@ main{
 }
 
 .menu-list{
-<<<<<<< HEAD
-  width: 80%;
-=======
   width: 70%;
->>>>>>> 923def5bdf29038834f3c3e1132987b29c583d1f
   display:flex;
   margin-left: auto;
   margin-right: auto;
@@ -521,29 +517,23 @@ main{
 }
 
 
-<<<<<<< HEAD
-@media screen and (max-width: 450px) {
-=======
 @media screen and (min-width: 450px) and (max-width: 515px){
   .menu-br{
     display:none;
   }
->>>>>>> 923def5bdf29038834f3c3e1132987b29c583d1f
   .menu-list{
     width: 100%;
   }
 }
-<<<<<<< HEAD
 
 
-@media screen and (min-width: 450px) {
-  .menu-br{
-    display:none;
-=======
+
+
+
+
 @media screen and (max-width: 450px) {
   .menu-list{
     width: 100%;
->>>>>>> 923def5bdf29038834f3c3e1132987b29c583d1f
   }
 }
 
