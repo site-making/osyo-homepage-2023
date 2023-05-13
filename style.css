@@ -94,8 +94,8 @@ main{
     height: 30%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-    border-radius: 10px;
+    box-shadow:0 0 5px #fff, 0 0 13px #898dbe;
+    border-radius: 25px;
     text-align:center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -106,7 +106,7 @@ main{
 }
 
 /* pc or tablet */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1020px){
   #wrapper{
     margin-left:auto;
     margin-right:auto;
@@ -120,10 +120,74 @@ main{
   .smartphone-image{
     display:none;
   }
+
   .responsive-smartphone-br{
     display:none;
   }
 }
+
+
+
+  .register-button{
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background: #FF3BE7;
+    border: 3px solid #FF3BE7;
+    border-radius: 0.5em;
+    font-size: 22px;
+    color:white;
+    letter-spacing:0.1em;
+    font-weight: bold;
+  }
+
+  .modal {
+    width: 50%;
+    height: 90%;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    display: none;
+    overflow-y:auto;
+    border-radius: 2em;
+    border: none;
+    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
+    flex-direction: column;
+  }
+
+  .modal-block-title{
+    letter-spacing: 0.2em;
+    font-size:30px;
+    color:#131b7d;
+    font-weight: bold;
+  }
+
+  .modal-block-description{
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    margin-top:3%;
+    color:#262626;
+  }
+
+  .modal-register-button{
+    font-size:16px;
+    font-weight:bold;
+    background:#131b7d;
+    color:white;
+    border-radius: 0.5em;
+    letter-spacing: 0.1em;
+    padding-top:1%;
+    padding-bottom:1%;
+    margin-top:3%;
+    margin-bottom:3%;
+    height:20%;
+    width:60%;
+  }
+
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1020px){
@@ -138,8 +202,8 @@ main{
     height: 30%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-    border-radius: 10px;
+    box-shadow:0 0 5px #fff, 0 0 13px #898dbe;
+    border-radius: 25px;
     text-align:center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -156,39 +220,147 @@ main{
     height: 30%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-    border-radius: 10px;
+    box-shadow:0 0 5px #fff, 0 0 13px #898dbe;
+    border-radius: 25px;
     text-align:center;
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top:20px;
     padding-bottom:20px;
     background-color: #fff;
+    padding: 20px !important;
+  }
+
+
+  .register-button{
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background: #FF3BE7;
+    border: 3px solid #FF3BE7;
+    border-radius: 0.5em;
+    font-size: 16px;
+    color:white;
+    letter-spacing:0.1em;
+    font-weight: bold;
+  }
+
+  .modal {
+    width: 95%;
+    height: 95%;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    display: none;
+    overflow-y:auto;
+    border-radius: 2em;
+    border: none;
+    box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
+    flex-direction: column;
+  }
+
+  .modal-block-title{
+    letter-spacing: 0.2em;
+    font-size:16px;
+    color:#131b7d;
+    font-weight: bold;
+  }
+
+  .modal-block-description{
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    margin-top:3%;
+    color:#262626;
+  }
+
+  .modal-qr{
+    display:none;
+  }
+
+  .modal-register-button{
+    font-size:12px;
+    font-weight:bold;
+    background:#131b7d;
+    color:white;
+    border-radius: 0.5em;
+    letter-spacing: 0.1em;
+    padding-top:1%;
+    padding-bottom:1%;
+    margin-top:3%;
+    margin-bottom:3%;
+    height:20%;
+    width:85%;
   }
 }
+
+
+/* ----------------------------------
+    main追加修正(提出後)
+----------------------------------- */
+
+.box {
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.smartphone-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px){
+  .box{
+    margin-bottom: 0 !important;
+  }
+  .smartphone-image+.box {
+    margin-top: 0;
+  }
+}
+
+
 
 /* ----------------------------------
     first-view
 ----------------------------------- */
 
-.first-view{
+.first-view-pc{
   width:100%;
   position: relative;
   z-index: 1;
 }
 
 
-.first-view img{
+.first-view-pc img{
   width:100%;
 }
 
 
+@media screen and (max-width: 767px){
+  .first-view-pc{
+    display:none;
+  }
+}
+ 
+@media screen and (min-width: 768px){
+  .first-view-phone{
+    display:none;
+  }
+}
+
+.first-view-phone{
+  width:100%;
+  position: relative;
+  z-index: 1;
+}
 
 
-
-
-
-
+.first-view-phone img{
+  width:100%;
+}
 
 
 .shuttle1{
@@ -202,8 +374,8 @@ main{
 
 .shuttle2{
   position: absolute;
-  top: 50%;
-  left: 1%;
+  top: 26%;
+  left: 3%;
   width: 6%;
   height: auto;
   animation: shuttle1 4s linear infinite;
@@ -211,9 +383,37 @@ main{
 
 .shuttle3{
   position: absolute;
-  top: 75%;
-  left: 45%;
+  top: 76%;
+  left: 39%;
   width: 5%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+.shuttle1-phone{
+  position: absolute;
+  top: 5%;
+  left: 63%;
+  width: 29%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+}
+
+.shuttle2-phone{
+  position: absolute;
+  top: 67%;
+  left: 5%;
+  width: 15%;
+  height: auto;
+  animation: shuttle1 4s linear infinite;
+
+}
+
+.shuttle3-phone{
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 14%;
   height: auto;
   animation: shuttle1 4s linear infinite;
 }
@@ -223,8 +423,6 @@ main{
   transform-origin: center bottom;
   animation: yurayura 2s linear infinite;
 }
-
-
 
 
 @keyframes  yurayura{
@@ -237,23 +435,9 @@ main{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .waves {
   position: absolute;
-  bottom: 0%;
+  bottom: 3px;
   display: flex;
  }
 
@@ -276,7 +460,7 @@ main{
   
   
 #wave{
-  animation: wave 4s 2s linear infinite;
+  animation: wave 6s 2s linear infinite;
 }
   
   
@@ -292,9 +476,20 @@ main{
 }
 
 
+/* ----------------------------------
+    first-view追加修正(提出後)
+----------------------------------- */
 
 
+@media (max-width: 783px) {
+  #wave {
+      animation: wave 4s 2s linear infinite;
+  }
+}
 
+.shuttle3-phone img {
+  transform: rotate(45deg);
+}
 
 
 
@@ -308,10 +503,11 @@ main{
 }
 
 .menu-list{
-  width: 80%;
+  width: 70%;
   display:flex;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 @media screen and (min-width: 515px) and (max-width: 685px) {
@@ -320,7 +516,12 @@ main{
   }
 }
 
-@media screen and (max-width: 515px) {
+
+
+@media screen and (min-width: 450px) and (max-width: 515px){
+  .menu-br{
+    display:none;
+  }
   .menu-list{
     width: 100%;
   }
@@ -333,13 +534,6 @@ main{
 }
 
 
-@media screen and (min-width: 450px) {
-  .menu-br{
-    display:none;
-  }
-}
-
-
 
 
 .menu-list a{
@@ -348,18 +542,10 @@ main{
 }
 
 .menu-list li{
-  width: 33%;
+  width: 33.3%;
   text-align: center;
   height:auto;
   list-style:none
-}
-
-
-
-
-
-.menu-list a:hover{
-  color:red;
 }
 
 
@@ -382,21 +568,11 @@ main{
 }
 
 
-
-
-
-
-
-.menu-list-img :hover {
-opacity: 0.5;
-}
-
-.menu-list-img:hover{
+.menu-list a:hover .menu-list-img {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-duration: 0.8s;
-    /* width: 128px; */
+    animation-duration: 0.4s;
     animation-name: anim_v;
   }
   
@@ -417,24 +593,17 @@ opacity: 0.5;
 }
 
 
+/* アンカーリンクへのスムーススクロール */
+html {
+   scroll-behavior: smooth;
+}
+
+
+
 
 /* ----------------------------------
     box
 ----------------------------------- */
-/* .box{
-  width: 70%;
-  height: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-  border-radius: 10px;
-  text-align:center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color: #fff;
-} */
 
 .box-title{
   color:#131b7d;
@@ -449,7 +618,6 @@ opacity: 0.5;
 ----------------------------------- */
 
 .introduce-description{
-  font-weight: bold;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -560,10 +728,27 @@ tr.table-bottom{
 
 
 
+/* ----------------------------------
+    box-top追加修正(提出後)
+----------------------------------- */
 
+.introduce-description {
+  line-height: 1.8rem;
+  padding-top: 1rem;
+}
 
+@media screen and (max-width: 767px){
+  .introduce-description {
+    padding: 1rem 0 0;
+  }
+}
 
-
+@media screen and (max-width: 767px){
+  .introduce-table {
+    margin: 3% 0;
+    width: 100%;
+  }
+}
 
 /* ----------------------------------
     box-middle
@@ -575,14 +760,27 @@ tr.table-bottom{
 
 .calender{
   width:80%;
-  height:300px;
+  height:500px;
   margin-left: auto;
   margin-right: auto;
 }
 .calender iframe{
   width: 100%;
-  height:300px;
+  height:500px;
 }
+
+
+/* ----------------------------------
+    box-middle追加修正(提出後)
+----------------------------------- */
+@media screen and (max-width: 767px){
+  .calender {
+    width: 100%;
+  }
+}
+
+
+
 
 
 
@@ -590,6 +788,10 @@ tr.table-bottom{
 /* ----------------------------------
     box-bottom
 ----------------------------------- */
+
+.box-bootom{
+  margin-bottom: 70px;
+}
 
 .notes{
   width: 80%;
@@ -635,20 +837,6 @@ tr.table-bottom{
   color:#131b7d;
 }
 
-.register-button{
-  padding-left:30px;
-  padding-right:30px;
-  padding-top:5px;
-  padding-bottom:5px;
-  background: #FF3BE7;
-  border: 3px solid #FF3BE7;
-  border-radius: 0.5em;
-  font-size: 22px;
-  color:white;
-  letter-spacing:0.1em;
-  font-weight: bold;
-}
-
 .register-button:hover{
   border-radius:0.5em;
   border-width: 1px;
@@ -677,35 +865,10 @@ tr.table-bottom{
 
 
 
-.modal {
-  width: 50%;
-  height: 90%;
-  border: 1px solid #000;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  display: none;
-  overflow-y:auto;
-  border-radius: 2em;
-  border: none;
-  box-shadow:0 0 5px #fff, 0 0 5px #ccc, 0 0 1px #aaa;
-  flex-direction: column;
-}
-
-.modal::-webkit-scrollbar{
-  width: 10px;
-}
-.modal::-webkit-scrollbar-track{
-  background-color: white;
-}
-.modal::-webkit-scrollbar-thumb{
-  background-color: #17585d;
-}
-
 .modal-content{
   padding:5%;
+  position:relative;
+  z-index: 20;
 }
 
 
@@ -713,12 +876,20 @@ tr.table-bottom{
   height:50%;
 }
 
-.modal-block-title{
-  letter-spacing: 0.2em;
-  font-size:30px;
-  color:#131b7d;
-  font-weight: bold;
+@media screen and (min-width:1030px){
+  .modal-title-br{
+    display: none;
+  }
 }
+ 
+@media screen and (max-width:768px){
+  .modal-title-br{
+    display: none;
+  }
+}
+
+  
+
 
 .modal-block-description{
   letter-spacing: 0.1em;
@@ -731,20 +902,6 @@ tr.table-bottom{
   color:red;
 }
 
-.modal-register-button{
-  font-size:16px;
-  font-weight:bold;
-  background:#131b7d;
-  color:white;
-  border-radius: 0.5em;
-  letter-spacing: 0.1em;
-  padding-top:1%;
-  padding-bottom:1%;
-  margin-top:3%;
-  margin-bottom:3%;
-  height:20%;
-  width:40%;
-}
 
 .modal-register-button:hover{
   border-radius:0.5em;
@@ -759,11 +916,13 @@ tr.table-bottom{
   width:30%;
 }
 
-.modal-close__wrap {
-  position: absolute;
-  right: 40px;
+
+
+.modal_close_position{
+  position:sticky;
   top: 20px;
-  display: flex;
+  right: 20px;
+  
 }
 
 
@@ -771,12 +930,12 @@ tr.table-bottom{
   background: transparent;
   border-color: transparent;
   padding: 0;
-  margin: 0;
+  margin: 0 20px 0 auto;
   cursor: pointer;
   width: 28px;
   display: block;
   height: 28px;
-  position:sticky;
+
 }
 
 .modal-close span {
@@ -825,19 +984,211 @@ tr.table-bottom{
   width: 90%;
 }
 
+/* ----------------------------------
+    box-bottom追加修正(提出後)
+----------------------------------- */
+
+.pc-footer,.smartphone-footer {
+  z-index: 1;
+}
+.overlay {
+  z-index: 5;
+}
+.modal {
+  z-index: 10;
+}
+
+.modal_close_position {
+  z-index: 25;
+}
+
+.notes {
+  padding-top: 10px;
+}
+.notes-description {
+  margin-top: 10px;
+}
+
+.notes-description p {
+  line-height: 1.8rem;
+}
+
+.register-description {
+  line-height: 2rem;
+}
+
+#js-modal::-webkit-scrollbar{
+  display: none;
+}
+
+/* モーダル表示後のスクロールバー非表示 */
+/*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+#js-modal{
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+}
+
+.modal-register-button {
+    border: 3px solid #131b7d;
+    line-height: 1.5rem;
+}
+
+
+@media (max-width: 1020px) {
+  .modal {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .notes {
+    width: 100%;
+  }
+  .notes-description-text {
+    width: 85%;
+  }
+}
+
+
+.modal-content hr {
+  margin: 30px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------------------------
     footer
 ----------------------------------- */
 
-footer img{
+.pc-footer{
   width:100%;
   position: absolute;
-  bottom:0px;
+  bottom: -10px;
+  position:relative;
+  z-index: 0;
+}
+
+.footer-description p{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 1;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .pc-footer{
+    display:none;
+  }
+}
+
+.smartphone-footer{
+  width:100%;
+  position: absolute;
+  bottom: -10px;
+  position:relative;
+  z-index: 0;
+}
+
+@media screen and (min-width: 769px){
+  .smartphone-footer{
+    position:relative;
+    z-index: 0;
+    display:none;
+  } 
+}
+
+.return-button{
+  position: absolute;
+  width: 7rem;
+  bottom: 20px;
+  left: 91%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 1;
+  color: #fff;
+  text-align: center;
 }
 
 
 
+.return-button a{
+  color: #fff;
+  text-decoration:none;
+}
+
+
+
+.return-button img{
+  width:30px;
+}
+
+.return-button p{
+  margin: 2px;
+}
+  
+
+
+/* ----------------------------------
+    footer追加修正(提出後)
+----------------------------------- */
+.pc-footer {
+  margin-top: -150px;
+}
+
+
+.footer-description p {
+  font-size: 12px;
+}
+
+
+
+.return-button a:hover  img {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.4s;
+    animation-name: anim_v;
+}
+.return-button img {
+    padding-bottom: 5px;
+}
+
+
+.return-button p {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1000px){
+.return-button {
+    width: 5rem;
+    left: 89%;
+    bottom: 10px;
+}
+.return-button img {
+    width: 23px;
+    padding-bottom: 3px;
+}
+.return-button p {
+    font-size: 12px;
+}
+}
 
 
  
@@ -847,6 +1198,13 @@ footer img{
 
 
 
-/* ----------------------------------
-    追加修正(提出後)
------------------------------------ */
+
+
+
+
+
+
+
+
+
+
