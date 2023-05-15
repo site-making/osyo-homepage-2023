@@ -517,7 +517,6 @@ main{
 }
 
 
-
 @media screen and (min-width: 450px) and (max-width: 515px){
   .menu-br{
     display:none;
@@ -526,6 +525,11 @@ main{
     width: 100%;
   }
 }
+
+
+
+
+
 
 @media screen and (max-width: 450px) {
   .menu-list{
