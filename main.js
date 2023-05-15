@@ -17,3 +17,10 @@ close.on('click', function () { //×ボタンをクリックしたら
 
 
 
+
+
+
+
+
+
+
